@@ -38,6 +38,7 @@ test:
   imports:
     - pygeoprocessing
     - pygeoprocessing.routing
+    - pygeoprocessing.multiprocessing
   commands:
     - pytest tests
 
