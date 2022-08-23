@@ -1,12 +1,12 @@
 {% set name = "pygeoprocessing" %}
-{% set version = "2.3.3.post0" %}
+{% set version = "2.3.4" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e6a306c69cad72dbbb2b4058937bdb1076fd1859686c4e522c639c7b1bbb440f
+  sha256: 4276f760c6409683b85dd6e42693982dc5f7f56cd8a969a996c609da2c050a1b
 
 build:
   number: 0
