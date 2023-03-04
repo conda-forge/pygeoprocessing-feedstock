@@ -1,11 +1,11 @@
-About pygeoprocessing
-=====================
+About pygeoprocessing-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygeoprocessing-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/natcap/pygeoprocessing
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygeoprocessing-feedstock/blob/main/LICENSE.txt)
 
 Summary: Raster, vector, and hydrological operations for GIS processing
 
