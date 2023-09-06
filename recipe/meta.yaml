@@ -22,7 +22,7 @@ requirements:
   host:
     - python
     - pip
-    - cython<3
+    - cython <3
     - numpy
     - setuptools_scm
   run:
