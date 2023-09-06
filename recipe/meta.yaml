@@ -22,7 +22,7 @@ requirements:
   host:
     - python
     - pip
-    - cython
+    - cython<3
     - numpy
     - setuptools_scm
   run:
@@ -30,9 +30,10 @@ requirements:
     - {{ pin_compatible('numpy') }}
     - rtree >=0.8.3
     - scipy !=0.19.1,>=0.14.1
-    - gdal >=3.0.4
+    - gdal >=3.0.4,<=3.7.0
     - shapely >=1.6.4
     - setuptools
+    - importlib_metadata
 
 test:
   requires:
