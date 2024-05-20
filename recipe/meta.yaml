@@ -9,7 +9,7 @@ source:
   sha256: 363174ea00351b4a7dd085da445c0436f147b623a5164ce4fd1efc0199e899b7
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -19,6 +19,7 @@ requirements:
     - cython <3.0.0                          # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
@@ -27,7 +28,6 @@ requirements:
     - setuptools_scm
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - rtree >=0.8.3
     - scipy !=0.19.1,>=0.14.1
     - gdal >=3.0.4,<3.7.0
