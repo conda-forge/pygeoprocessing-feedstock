@@ -25,6 +25,7 @@ requirements:
     - pip
     - cython >=3
     - numpy <2
+    - setuptools
     - setuptools_scm
   run:
     - python
@@ -34,7 +35,7 @@ requirements:
     - gdal >=3.0.4,<3.7.0
     - shapely >=1.6.4
     - setuptools
-    - importlib_metadata
+    - importlib-metadata
 
 test:
   requires:
