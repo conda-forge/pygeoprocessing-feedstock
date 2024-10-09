@@ -19,7 +19,6 @@ requirements:
     - cython >=3                             # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('cxx') }}
-    - {{ stdlib("c") }}
   host:
     - python
     - pip
