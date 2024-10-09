@@ -10,7 +10,8 @@ source:
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  # adding --no-deps to rely on conda-managed numpy, not what's in requirements.txt.
+  script: {{ PYTHON }} -m pip install . -vv --no-deps
 
 requirements:
   build:
