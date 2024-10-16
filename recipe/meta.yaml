@@ -1,12 +1,12 @@
 {% set name = "pygeoprocessing" %}
-{% set version = "2.4.5" %}
+{% set version = "2.4.6" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 21806da06038d91fcf7e78a408a669d2da43f494a71989a36bbba051cf2bf105
+  sha256: 4a7440cfa7998b701313ef5026195d10737e9cc52b900b00a8ef54f62b0912dd
 
 build:
   number: 0
@@ -20,6 +20,7 @@ requirements:
     - cython >=3                             # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
