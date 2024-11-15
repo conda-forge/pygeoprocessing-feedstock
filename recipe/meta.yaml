@@ -9,7 +9,7 @@ source:
   sha256: 4a7440cfa7998b701313ef5026195d10737e9cc52b900b00a8ef54f62b0912dd
 
 build:
-  number: 0
+  number: 1
   # adding --no-deps to rely on conda-managed numpy, not what's in requirements.txt.
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
