@@ -32,7 +32,7 @@ requirements:
     - python
     - rtree >=0.8.3
     - scipy !=0.19.1,>=0.14.1
-    - gdal >=3.0.4,<3.7.0
+    - gdal >=3.0.4
     - shapely >=1.6.4
     - setuptools
     - importlib-metadata
