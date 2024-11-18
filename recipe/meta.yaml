@@ -50,10 +50,10 @@ test:
     # skipping for now due to change in GDAL exceptions: 
     # https://github.com/conda-forge/pygeoprocessing-feedstock/pull/35
     - >
-      pytest \
-      --deselect=tests/test_geoprocessing.py::test_get_raster_info_error_handling \
-      --deselect=tests/test_geoprocessing.py::test_get_vector_info_error_handling \
-      tests
+    pytest \
+    --deselect=tests/test_geoprocessing.py::test_get_raster_info_error_handling \
+    --deselect=tests/test_geoprocessing.py::test_get_vector_info_error_handling \
+    tests
 
 about:
   home: https://github.com/natcap/pygeoprocessing
