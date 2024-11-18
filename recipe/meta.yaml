@@ -47,12 +47,12 @@ test:
     - pygeoprocessing.routing
     - pygeoprocessing.multiprocessing
   commands:
+    # skipping for now due to change in GDAL exceptions: 
+    # https://github.com/conda-forge/pygeoprocessing-feedstock/pull/35
     - >
-      pytest 
-      # skipping for now due to change in GDAL exceptions: 
-      # https://github.com/conda-forge/pygeoprocessing-feedstock/pull/35
-      --deselect=tests/test_geoprocessing.py::test_get_raster_info_error_handling 
-      --deselect=tests/test_geoprocessing.py::test_get_vector_info_error_handling 
+      pytest \
+      --deselect=tests/test_geoprocessing.py::test_get_raster_info_error_handling \
+      --deselect=tests/test_geoprocessing.py::test_get_vector_info_error_handling \
       tests
 
 about:
