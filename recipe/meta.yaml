@@ -9,7 +9,7 @@ source:
   sha256: 889f4083ccdcc53e9cbc12745a09745635b4d9f158d6ea625c524139236be7fc
 
 build:
-  number: 0
+  number: 1
   # adding --no-deps to rely on conda-managed numpy, not what's in requirements.txt.
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
@@ -32,7 +32,7 @@ requirements:
     - python
     - rtree >=0.8.3
     - scipy !=0.19.1,>=0.14.1
-    - gdal >=3.0.4,<3.7.0
+    - gdal >=3.0.4
     - shapely >=1.6.4
     - setuptools
     - importlib-metadata
