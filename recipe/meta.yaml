@@ -1,15 +1,15 @@
 {% set name = "pygeoprocessing" %}
-{% set version = "2.4.7" %}
+{% set version = "2.4.8" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 889f4083ccdcc53e9cbc12745a09745635b4d9f158d6ea625c524139236be7fc
+  sha256: 20d7fb0a4f1bf94299263bcddb50c0086c1d4c9612594785bb599b4a2dfbbf88
 
 build:
-  number: 1
+  number: 0
   # adding --no-deps to rely on conda-managed numpy, not what's in requirements.txt.
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
