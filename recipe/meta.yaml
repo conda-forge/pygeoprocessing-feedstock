@@ -48,7 +48,7 @@ test:
     - pygeoprocessing.multiprocessing
   commands:
     # Skipping a single test that's failing.  Pygeoprocessing shouldn't be testing GDAL functionality anyways.
-    - pytest -vs tests -k "not test_create_raster_from_vector_extents_invalid_pixeltype"
+    - pytest -vs tests -o log_cli=True -k "not test_create_raster_from_vector_extents_invalid_pixeltype"
 
 about:
   home: https://github.com/natcap/pygeoprocessing
