@@ -12,6 +12,8 @@ build:
   number: 0
   # adding --no-deps to rely on conda-managed numpy, not what's in requirements.txt.
   script: {{ PYTHON }} -m pip install . -vv --no-deps
+  script_env:
+    - PYGEOPROCESSING_GDAL_LIB_PATH={{ CONDA_PREFIX }}/Library
 
 requirements:
   build:
@@ -21,7 +23,6 @@ requirements:
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
-    - gdal
   host:
     - python
     - pip
@@ -29,6 +30,7 @@ requirements:
     - numpy
     - setuptools
     - setuptools_scm
+    - libgdal-core <3.11  # for compatibility with rasterio, which doesn't yet support gdal 3.11
   run:
     - python
     - rtree >=0.8.3
