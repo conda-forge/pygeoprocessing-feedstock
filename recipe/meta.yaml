@@ -21,6 +21,7 @@ requirements:
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
+    - gdal
   host:
     - python
     - pip
