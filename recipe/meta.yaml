@@ -30,13 +30,13 @@ requirements:
     - numpy
     - setuptools
     - setuptools_scm
-    - libgdal-core {{ libgdal-core }}
+    - libgdal-core {{ libgdal }}
   run:
     - python
     - rtree >=0.8.3
     - scipy !=0.19.1,>=0.14.1
     - gdal >=3.0.4
-    - libgdal-core {{ libgdal-core }}  # install the same version we build against
+    - libgdal-core {{ libgdal }}  # install the same version we build against
     - shapely >=1.6.4
     - setuptools
     - importlib-metadata
