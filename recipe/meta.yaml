@@ -9,7 +9,9 @@ source:
   sha256: db35fee32dccdb885676eddfddd263ecd80a6da01cfedff6f453e58a27348594
 
 build:
-  number: 0
+  skip:  # Skip specific combinations of libgdal/python here
+    - true  # [ libgdal == "3.9" and py >= 314 ]
+  number: 1
   # adding --no-deps to rely on conda-managed numpy, not what's in requirements.txt.
   script: {{ PYTHON }} -m pip install . -vv --no-deps
   script_env:
@@ -30,12 +32,13 @@ requirements:
     - numpy
     - setuptools
     - setuptools_scm
-    - libgdal-core <3.11  # for compatibility with rasterio, which doesn't yet support gdal 3.11
+    - libgdal-core {{ libgdal }}
   run:
     - python
     - rtree >=0.8.3
     - scipy !=0.19.1,>=0.14.1
     - gdal >=3.0.4
+    - libgdal-core {{ libgdal }}  # install the same version we build against
     - shapely >=1.6.4
     - setuptools
     - importlib-metadata
