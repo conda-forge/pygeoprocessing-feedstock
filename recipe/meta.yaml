@@ -30,12 +30,13 @@ requirements:
     - numpy
     - setuptools
     - setuptools_scm
-    - libgdal-core <3.11  # for compatibility with rasterio, which doesn't yet support gdal 3.11
+    - libgdal-core {{ libgdal-core }}
   run:
     - python
     - rtree >=0.8.3
     - scipy !=0.19.1,>=0.14.1
     - gdal >=3.0.4
+    - libgdal-core {{ libgdal-core }}  # install the same version we build against
     - shapely >=1.6.4
     - setuptools
     - importlib-metadata
