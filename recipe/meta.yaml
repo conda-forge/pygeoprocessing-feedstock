@@ -1,17 +1,17 @@
 {% set name = "pygeoprocessing" %}
-{% set version = "2.4.10" %}
+{% set version = "2.4.11" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: db35fee32dccdb885676eddfddd263ecd80a6da01cfedff6f453e58a27348594
+  sha256: 5e1f49e4f925400f140280120b2ba563263c96f0ae11a8b12444bcc899d2787a
 
 build:
   skip:  # Skip specific combinations of libgdal/python here
     - true  # [ libgdal == "3.9" and py >= 314 ]
-  number: 2
+  number: 0
   # adding --no-deps to rely on conda-managed numpy, not what's in requirements.txt.
   script: {{ PYTHON }} -m pip install . -vv --no-deps
   script_env:
