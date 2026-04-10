@@ -160,7 +160,7 @@ jobs:
         CONFIG: osx_arm64_libgdal3.9python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
-    maxParallel: 17
+    maxParallel: 33
   timeoutInMinutes: 360
   variables: {}
 
