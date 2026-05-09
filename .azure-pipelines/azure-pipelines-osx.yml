@@ -12,154 +12,202 @@ jobs:
         CONFIG: osx_64_libgdal3.10python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_64_libgdal3.10python3.11.____cpython:
         CONFIG: osx_64_libgdal3.10python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_64_libgdal3.10python3.12.____cpython:
         CONFIG: osx_64_libgdal3.10python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_64_libgdal3.10python3.13.____cp313:
         CONFIG: osx_64_libgdal3.10python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_64_libgdal3.10python3.14.____cp314:
         CONFIG: osx_64_libgdal3.10python3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_64_libgdal3.11python3.10.____cpython:
         CONFIG: osx_64_libgdal3.11python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_64_libgdal3.11python3.11.____cpython:
         CONFIG: osx_64_libgdal3.11python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_64_libgdal3.11python3.12.____cpython:
         CONFIG: osx_64_libgdal3.11python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_64_libgdal3.11python3.13.____cp313:
         CONFIG: osx_64_libgdal3.11python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_64_libgdal3.11python3.14.____cp314:
         CONFIG: osx_64_libgdal3.11python3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_64_libgdal3.12python3.10.____cpython:
         CONFIG: osx_64_libgdal3.12python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_64_libgdal3.12python3.11.____cpython:
         CONFIG: osx_64_libgdal3.12python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_64_libgdal3.12python3.12.____cpython:
         CONFIG: osx_64_libgdal3.12python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_64_libgdal3.12python3.13.____cp313:
         CONFIG: osx_64_libgdal3.12python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_64_libgdal3.12python3.14.____cp314:
         CONFIG: osx_64_libgdal3.12python3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
-      osx_64_libgdal3.9python3.10.____cpython:
-        CONFIG: osx_64_libgdal3.9python3.10.____cpython
+        store_build_artifacts: false
+      osx_64_libgdal3.13python3.10.____cpython:
+        CONFIG: osx_64_libgdal3.13python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
-      osx_64_libgdal3.9python3.11.____cpython:
-        CONFIG: osx_64_libgdal3.9python3.11.____cpython
+        store_build_artifacts: false
+      osx_64_libgdal3.13python3.11.____cpython:
+        CONFIG: osx_64_libgdal3.13python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
-      osx_64_libgdal3.9python3.12.____cpython:
-        CONFIG: osx_64_libgdal3.9python3.12.____cpython
+        store_build_artifacts: false
+      osx_64_libgdal3.13python3.12.____cpython:
+        CONFIG: osx_64_libgdal3.13python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
-      osx_64_libgdal3.9python3.13.____cp313:
-        CONFIG: osx_64_libgdal3.9python3.13.____cp313
+        store_build_artifacts: false
+      osx_64_libgdal3.13python3.13.____cp313:
+        CONFIG: osx_64_libgdal3.13python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
+      osx_64_libgdal3.13python3.14.____cp314:
+        CONFIG: osx_64_libgdal3.13python3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_arm64_libgdal3.10python3.10.____cpython:
         CONFIG: osx_arm64_libgdal3.10python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_arm64_libgdal3.10python3.11.____cpython:
         CONFIG: osx_arm64_libgdal3.10python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_arm64_libgdal3.10python3.12.____cpython:
         CONFIG: osx_arm64_libgdal3.10python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_arm64_libgdal3.10python3.13.____cp313:
         CONFIG: osx_arm64_libgdal3.10python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_arm64_libgdal3.10python3.14.____cp314:
         CONFIG: osx_arm64_libgdal3.10python3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_arm64_libgdal3.11python3.10.____cpython:
         CONFIG: osx_arm64_libgdal3.11python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_arm64_libgdal3.11python3.11.____cpython:
         CONFIG: osx_arm64_libgdal3.11python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_arm64_libgdal3.11python3.12.____cpython:
         CONFIG: osx_arm64_libgdal3.11python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_arm64_libgdal3.11python3.13.____cp313:
         CONFIG: osx_arm64_libgdal3.11python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_arm64_libgdal3.11python3.14.____cp314:
         CONFIG: osx_arm64_libgdal3.11python3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_arm64_libgdal3.12python3.10.____cpython:
         CONFIG: osx_arm64_libgdal3.12python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_arm64_libgdal3.12python3.11.____cpython:
         CONFIG: osx_arm64_libgdal3.12python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_arm64_libgdal3.12python3.12.____cpython:
         CONFIG: osx_arm64_libgdal3.12python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_arm64_libgdal3.12python3.13.____cp313:
         CONFIG: osx_arm64_libgdal3.12python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
       osx_arm64_libgdal3.12python3.14.____cp314:
         CONFIG: osx_arm64_libgdal3.12python3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
-      osx_arm64_libgdal3.9python3.10.____cpython:
-        CONFIG: osx_arm64_libgdal3.9python3.10.____cpython
+        store_build_artifacts: false
+      osx_arm64_libgdal3.13python3.10.____cpython:
+        CONFIG: osx_arm64_libgdal3.13python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
-      osx_arm64_libgdal3.9python3.11.____cpython:
-        CONFIG: osx_arm64_libgdal3.9python3.11.____cpython
+        store_build_artifacts: false
+      osx_arm64_libgdal3.13python3.11.____cpython:
+        CONFIG: osx_arm64_libgdal3.13python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
-      osx_arm64_libgdal3.9python3.12.____cpython:
-        CONFIG: osx_arm64_libgdal3.9python3.12.____cpython
+        store_build_artifacts: false
+      osx_arm64_libgdal3.13python3.12.____cpython:
+        CONFIG: osx_arm64_libgdal3.13python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
-      osx_arm64_libgdal3.9python3.13.____cp313:
-        CONFIG: osx_arm64_libgdal3.9python3.13.____cp313
+        store_build_artifacts: false
+      osx_arm64_libgdal3.13python3.13.____cp313:
+        CONFIG: osx_arm64_libgdal3.13python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+        store_build_artifacts: false
+      osx_arm64_libgdal3.13python3.14.____cp314:
+        CONFIG: osx_arm64_libgdal3.13python3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        store_build_artifacts: false
     maxParallel: 33
   timeoutInMinutes: 360
   variables: {}
