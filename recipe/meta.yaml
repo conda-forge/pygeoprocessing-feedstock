@@ -11,7 +11,7 @@ source:
 build:
   skip:  # Skip specific combinations of libgdal/python here
     - true  # [ libgdal == "3.9" and py >= 314 ]
-  number: 0
+  number: 1
   # adding --no-deps to rely on conda-managed numpy, not what's in requirements.txt.
   script: {{ PYTHON }} -m pip install . -vv --no-deps
   script_env:
