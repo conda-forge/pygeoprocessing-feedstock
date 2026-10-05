@@ -13,6 +13,7 @@ source:
 build:
   skip:  # Skip specific combinations of libgdal/python here
     - true  # [ libgdal == "3.9" and py >= 314 ]
+    - true  # [ libgdal <= "3.13" and py >= 315 ]
   number: 3
   # adding --no-deps to rely on conda-managed numpy, not what's in requirements.txt.
   script: {{ PYTHON }} -m pip install . -vv --no-deps
