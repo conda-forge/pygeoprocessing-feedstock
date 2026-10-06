@@ -13,7 +13,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '19'
+- '21'
 libgdal:
 - '3.11'
 macos_machine:
@@ -28,3 +28,6 @@ python:
 - 3.13.* *_cp313
 target_platform:
 - osx-arm64
+zip_keys:
+- - python
+  - channel_sources
