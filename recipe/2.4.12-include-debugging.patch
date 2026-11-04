@@ -39,7 +39,7 @@ index b97699a9..4b351b4b 100644
 +    LOGGER.info(f"Pygeoprocessing extensions location: {ext_location}")
 +    return ext_location
 diff --git a/tests/test_geoprocessing.py b/tests/test_geoprocessing.py
-index 8b6bb708..e0d30e53 100644
+index 8b6bb708..9d710a2f 100644
 --- a/tests/test_geoprocessing.py
 +++ b/tests/test_geoprocessing.py
 @@ -5,6 +5,7 @@ import logging
@@ -65,7 +65,7 @@ index 8b6bb708..e0d30e53 100644
  
 -        # Confirm that the include dir exists
 -        self.assertTrue(os.path.isdir(pygeoprocessing.get_include()))
-+        if (platform.system() == 'Windows') and ('%PREFIX%' in include_dir):
++        if (platform.system() == 'Windows') and ('CONDA_PREFIX' in os.environ):
 +            # Conda-forge builds for the pygeoprocessing 2.4.12 release were
 +            # failing on Windows only because os.path.expandvars() was not
 +            # expanding the %PREFIX% env var, presumably because it did not
