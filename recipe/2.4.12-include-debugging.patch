@@ -1,8 +1,8 @@
 diff --git a/src/pygeoprocessing/__init__.py b/src/pygeoprocessing/__init__.py
-index b97699a9..567dcb60 100644
+index b97699a9..a018f672 100644
 --- a/src/pygeoprocessing/__init__.py
 +++ b/src/pygeoprocessing/__init__.py
-@@ -80,6 +80,10 @@ __getattr__, __dir__, __all__ = lazy_loader.attach(
+@@ -80,6 +80,12 @@ __getattr__, __dir__, __all__ = lazy_loader.attach(
  def get_include():
      """Return the directory that includes the pygeoprocessing *.h header files.
  
@@ -13,4 +13,6 @@ index b97699a9..567dcb60 100644
          The string path to the header files location."""
 -    return os.path.join(os.path.dirname(__file__), 'extensions')
 +    package_location = os.path.dirname(os.path.expandvars(__file__))
-+    return os.path.join(package_location, 'extensions')
++    ext_location = os.path.join(package_location, 'extensions')
++    LOGGER.info(f"Pygeoprocessing extensions location: {ext_location}")
++    return ext_location
