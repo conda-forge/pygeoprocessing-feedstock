@@ -43,6 +43,7 @@ requirements:
     - shapely >=1.6.4
     - setuptools
     - importlib-metadata
+    - lazy_loader
 
 test:
   requires:
