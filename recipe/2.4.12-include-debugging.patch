@@ -1,0 +1,17 @@
+diff --git a/tests/test_geoprocessing.py b/tests/test_geoprocessing.py
+index 8b6bb708..eab3b723 100644
+--- a/tests/test_geoprocessing.py
++++ b/tests/test_geoprocessing.py
+@@ -6190,4 +6190,11 @@ class TestGeoprocessing(unittest.TestCase):
+         )
+ 
+         # Confirm that the include dir exists
+-        self.assertTrue(os.path.isdir(pygeoprocessing.get_include()))
++        try:
++            self.assertTrue(os.path.isdir(pygeoprocessing.get_include()))
++        except AssertionError as e:
++            print(pygeoprocessing.get_include())
++            print(os.path.isdir(pygeoprocessing.get_include()))
++            print(pygeoprocessing.__path__)
++            print(pygeoprocessing.__file__)
++            raise

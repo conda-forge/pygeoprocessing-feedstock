@@ -7,6 +7,8 @@ package:
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: f3e15cd6c883fae258ec876b49172309cd24de1789eccb0a733021da2d696c5d
+  patches:
+    - 2.4.12-include-debugging.patch
 
 build:
   skip:  # Skip specific combinations of libgdal/python here
