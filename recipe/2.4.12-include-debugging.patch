@@ -39,7 +39,7 @@ index b97699a9..4b351b4b 100644
 +    LOGGER.info(f"Pygeoprocessing extensions location: {ext_location}")
 +    return ext_location
 diff --git a/tests/test_geoprocessing.py b/tests/test_geoprocessing.py
-index 8b6bb708..f53945d9 100644
+index 8b6bb708..4ae924bc 100644
 --- a/tests/test_geoprocessing.py
 +++ b/tests/test_geoprocessing.py
 @@ -5,6 +5,7 @@ import logging
@@ -50,11 +50,12 @@ index 8b6bb708..f53945d9 100644
  import queue
  import shutil
  import sys
-@@ -6184,10 +6185,20 @@ class TestGeoprocessing(unittest.TestCase):
+@@ -6184,10 +6185,21 @@ class TestGeoprocessing(unittest.TestCase):
      def test_get_include(self):
          """PGP: test get_include()."""
          # Check the value is what we expect
 +        include_dir = pygeoprocessing.get_include()
++        print('include_dir', include_dir)
          self.assertEqual(
 -            pygeoprocessing.get_include(),
 +            include_dir,
@@ -63,7 +64,7 @@ index 8b6bb708..f53945d9 100644
  
 -        # Confirm that the include dir exists
 -        self.assertTrue(os.path.isdir(pygeoprocessing.get_include()))
-+        if platform.system() == 'Windows' and 'prefix' in include_dir.lower():
++        if (platform.system() == 'Windows') and ('%PREFIX%' in include_dir):
 +            # Conda-forge builds for the pygeoprocessing 2.4.12 release were
 +            # failing on Windows only because os.path.expandvars() was not
 +            # expanding the %PREFIX% env var, presumably because it did not
@@ -73,4 +74,4 @@ index 8b6bb708..f53945d9 100644
 +            print("Skipping this test.")
 +        else:
 +            # Confirm that the include dir exists
-+            self.assertTrue(os.path.isdir(pygeoprocessing.get_include()))
++            self.assertTrue(os.path.isdir(include_dir))
