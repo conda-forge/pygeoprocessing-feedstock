@@ -39,7 +39,7 @@ index b97699a9..4b351b4b 100644
 +    LOGGER.info(f"Pygeoprocessing extensions location: {ext_location}")
 +    return ext_location
 diff --git a/tests/test_geoprocessing.py b/tests/test_geoprocessing.py
-index 8b6bb708..4ae924bc 100644
+index 8b6bb708..e0d30e53 100644
 --- a/tests/test_geoprocessing.py
 +++ b/tests/test_geoprocessing.py
 @@ -5,6 +5,7 @@ import logging
@@ -50,12 +50,13 @@ index 8b6bb708..4ae924bc 100644
  import queue
  import shutil
  import sys
-@@ -6184,10 +6185,21 @@ class TestGeoprocessing(unittest.TestCase):
+@@ -6184,10 +6185,22 @@ class TestGeoprocessing(unittest.TestCase):
      def test_get_include(self):
          """PGP: test get_include()."""
          # Check the value is what we expect
 +        include_dir = pygeoprocessing.get_include()
 +        print('include_dir', include_dir)
++        print('platform.system', platform.system())
          self.assertEqual(
 -            pygeoprocessing.get_include(),
 +            include_dir,
