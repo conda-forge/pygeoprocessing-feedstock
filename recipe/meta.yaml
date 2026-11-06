@@ -17,8 +17,8 @@ build:
   # adding --no-deps to rely on conda-managed numpy, not what's in requirements.txt.
   script: {{ PYTHON }} -m pip install . -vv --no-deps
   always_include_files:
-  - Lib/site-packages/**/*.pxd  # Forces conda to keep all Cython headers inside site-packages
-  - Lib/site-packages/**/*.h    # Forces conda to keep standard headers alongside the modules
+  - "Lib/site-packages/{{ name }}/extensions.pxd"
+  - "Lib/site-packages/{{ name }}/extensions/*.h"
   script_env:
     - PYGEOPROCESSING_GDAL_LIB_PATH={{ CONDA_PREFIX }}/Library
 
