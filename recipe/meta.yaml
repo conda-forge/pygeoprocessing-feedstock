@@ -66,7 +66,7 @@ test:
     - pytest -vs tests -o log_cli=True -k "not test_create_raster_from_vector_extents_invalid_pixeltype"  # [ not (aarch64 or ppc64le) ]
 
     # Make sure that pxd files were installed.
-    - python -c "import os, {{ name }}; extensions_path = os.path.join(os.path.dirname({{ name }}.__file__), 'extensions.pxd'); assert os.path.exists(extensions_path), f'Path not found: {extensions_path}'"
+    - python -c "import os, {{ name }}; extensions_path = os.path.join(os.path.dirname({{ name }}.__file__), 'extensions.pxd'); assert os.path.exists(extensions_path), \'Path not found: \' + extensions_path"
 
 
 about:
