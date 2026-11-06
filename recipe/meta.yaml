@@ -17,8 +17,8 @@ build:
   # adding --no-deps to rely on conda-managed numpy, not what's in requirements.txt.
   script: {{ PYTHON }} -m pip install . -vv --no-deps
   always_include_files:
-  - "Lib/site-packages/{{ name }}/extensions.pxd"
-  - "Lib/site-packages/{{ name }}/extensions/*.h"
+  - "Lib/site-packages/pygeoprocessing/extensions.pxd"
+  - "Lib/site-packages/pygeoprocessing/extensions/*.h"
   script_env:
     - PYGEOPROCESSING_GDAL_LIB_PATH={{ CONDA_PREFIX }}/Library
 
