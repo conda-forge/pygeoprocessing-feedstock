@@ -1,0 +1,7 @@
+diff --git a/MANIFEST.in b/MANIFEST.in
+index 81c83349..9301ba33 100644
+--- a/MANIFEST.in
++++ b/MANIFEST.in
+@@ -1 +1,2 @@
+ global-exclude *.cpp *.c
++recursive-include *.pxd *.h

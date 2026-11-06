@@ -9,6 +9,7 @@ source:
   sha256: f3e15cd6c883fae258ec876b49172309cd24de1789eccb0a733021da2d696c5d
   patches:
     - 2.4.12-include-debugging.patch
+    - 2.4.12-manifest-include-pxd-h.patch
 
 build:
   skip:  # Skip specific combinations of libgdal/python here
