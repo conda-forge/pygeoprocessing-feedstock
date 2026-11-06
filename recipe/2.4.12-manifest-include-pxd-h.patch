@@ -4,4 +4,4 @@ index 81c83349..9301ba33 100644
 +++ b/MANIFEST.in
 @@ -1 +1,2 @@
  global-exclude *.cpp *.c
-+recursive-include *.pxd *.h
++recursive-include pygeoprocessing *.pxd *.h
