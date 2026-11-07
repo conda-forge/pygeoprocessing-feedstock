@@ -9,13 +9,17 @@ source:
   sha256: f3e15cd6c883fae258ec876b49172309cd24de1789eccb0a733021da2d696c5d
   patches:
     - 2.4.12-include-debugging.patch
+    - 2.4.12-manifest-include-pxd-h.patch
 
 build:
   skip:  # Skip specific combinations of libgdal/python here
     - true  # [ float(libgdal) <= float(3.13) and py >= 315 ]
-  number: 0
+  number: 1
   # adding --no-deps to rely on conda-managed numpy, not what's in requirements.txt.
   script: {{ PYTHON }} -m pip install . -vv --no-deps
+  always_include_files:
+  - "Lib/site-packages/pygeoprocessing/extensions.pxd"
+  - "Lib/site-packages/pygeoprocessing/extensions/*.h"
   script_env:
     - PYGEOPROCESSING_GDAL_LIB_PATH={{ CONDA_PREFIX }}/Library
 
@@ -61,6 +65,10 @@ test:
     #     aarch64 and ppcle64 builds are less-used, so this is probably fine for now until we can fix this.
     #     See https://github.com/conda-forge/pygeoprocessing-feedstock/issues/50
     - pytest -vs tests -o log_cli=True -k "not test_create_raster_from_vector_extents_invalid_pixeltype"  # [ not (aarch64 or ppc64le) ]
+
+    # Make sure that pxd files were installed.
+    - python -c "import os, {{ name }}; extensions_path = os.path.join(os.path.dirname({{ name }}.__file__), 'extensions.pxd'); assert os.path.exists(extensions_path), 'Path not found ' + extensions_path"
+
 
 about:
   home: https://github.com/natcap/pygeoprocessing
